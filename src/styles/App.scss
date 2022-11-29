@@ -1,0 +1,26 @@
+@import './partials/home.scss';
+@import './partials/sidebar.scss';
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #353535;
+  font-family: 'Founders', sans-serif;
+
+  #root {
+    height: 100%;
+
+    .app {
+      height: 100%;
+      display: flex;
+      position: relative;
+
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+      }
+    }
+  }
+}

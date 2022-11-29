@@ -1,0 +1,124 @@
+#home {
+  max-width: 900px;
+  font-family:"Roboto", sans-serif;
+
+  h1, h2 {
+    word-wrap: break-word;
+    transform: none;
+  }
+
+  ::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #222;
+  }
+
+  .content-head {
+    margin: 0 31px 10px;
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+
+    h1 {
+      margin: 0;
+      color: #018565;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: initial;
+    }
+  }
+
+  .content-body {
+    margin: 0 31px;
+    padding: 0 0 50px;
+
+    h2 {
+      margin: 22px 0 20px;
+      color: #018565;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .api-group {
+      ul {
+        padding: 0 0 0 2em;
+        margin: 0 0 15px;
+      }
+
+      li {
+        margin: 0 0 10px;
+
+        h3 {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          color: #018565;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+
+    }
+
+    p {
+      text-align: left;
+    }
+
+    a {
+      color: #353535 !important;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    blockquote.callout-info {
+      display: block;
+      position: relative;
+      margin: 0 0 15px;
+      padding: 15px 21px 21px 50px;
+      background-color: #b9dcff;
+      color: #000;
+
+      span.callout-icon {
+        display: none;
+        float: left;
+        margin: 0 -4px 0 -31.28px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      h3 {
+        margin: 5px 0 15px 15px;
+
+        p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 29.7px;
+        }
+      }
+
+      p {
+        margin: 0 0 0 15px;
+        line-height: 24px;
+      }
+    }
+
+    blockquote.callout-info:before {
+      background-image: url('/assets/callinfo-icon.svg');
+      background-position-x:50%;
+      background-position-y:50%;
+      display: block;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      top: 18px;
+      left: 20px;
+    }
+  }
+}
