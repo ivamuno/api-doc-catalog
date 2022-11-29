@@ -1,17 +1,62 @@
 import React from "react";
-import { RiSecurePaymentFill  } from "react-icons/ri";
+import { AiFillPicture, AiFillAlert  } from "react-icons/ai";
+import { FaUsers } from "react-icons/fa";
 
 export const apis = [
   {
-    title: "gateway",
-    key: "gateway",
-    icon: <RiSecurePaymentFill />,
+    title: "Emergency Call",
+    key: "emc",
+    icon: <AiFillAlert />,
     child: [
       {
-        title: "Async messages",
+        title: "Events",
         key: "async-messages",
         url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Gateway async messages.",
+        description: "Subscribe to Profile Image async messages.",
+      },
+      {
+        title: "Endpoints",
+        key: "endpoints",
+        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        description: "Subscribe to Profile Image async messages.",
+      },
+    ],
+  },
+  {
+    title: "Profile Image",
+    key: "pri",
+    icon: <AiFillPicture />,
+    child: [
+      {
+        title: "Events",
+        key: "async-messages",
+        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        description: "Subscribe to Profile Image async messages.",
+      },
+      {
+        title: "Endpoints",
+        key: "endpoints",
+        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        description: "Subscribe to Profile Image async messages.",
+      },
+    ],
+  },
+  {
+    title: "Users Bulk",
+    key: "usb",
+    icon: <FaUsers />,
+    child: [
+      {
+        title: "Events",
+        key: "async-messages",
+        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        description: "Subscribe to Profile Image async messages.",
+      },
+      {
+        title: "Endpoints",
+        key: "endpoints",
+        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        description: "Subscribe to Profile Image async messages.",
       },
     ],
   },

@@ -1,22 +1,14 @@
 {
-  "name": "internal-api-explorer",
+  "name": "api-doc-catalog",
   "version": "0.3.1",
   "homepage": "./",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && copyfiles docs/**/* build && npm run pack:postman",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "npm run build && npm run build:apis && light-server -s build",
-    "pack:postman": "mkdirp public/assets/postman && cd src/assets/postman/ && bestzip ../../../public/assets/postman/internal-api-docs.postman.zip *",
-    "build:apis": "npm run build:identity",
-    "build:cards-tokenization": "npm run build:cards-tokenization-api && npm run build:cards-tokenization-crypto-api",
-    "build:cards-tokenization-api": "redocly bundle apis/cards-tokenization/api/openapi.yaml -o build/docs/cards-tokenization-api.yaml",
-    "build:cards-tokenization-crypto-api": "redocly bundle apis/cards-tokenization/crypto-api/openapi.yaml -o build/docs/cards-tokenization-crypto-api.yaml",
-    "build:front-office-config": "redocly bundle apis/front-office-config/openapi.yaml -o build/docs/front-office-config-api.yaml",
-    "build:identity": "redocly bundle apis/identity/openapi.yaml -o build/docs/identity-api.yaml",
-    "build:sensitive-data": "redocly bundle apis/sensitive-data/openapi.yaml -o build/docs/sensitive-data-api.yaml"
+    "serve": "npm run build && light-server -s build"
   },
   "dependencies": {
     "codemirror": "^5.59.2",
