@@ -10,15 +10,15 @@ export const apis = [
     child: [
       {
         title: "Events",
-        key: "async-messages",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Profile Image async messages.",
+        key: "events",
+        url: "https://users.pdx.649265684449.aircall-sandbox.com/assets/docs/emc/asyncapi.yml",
+        description: "Subscribe to Emergency Call async messages.",
       },
       {
         title: "Endpoints",
         key: "endpoints",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Profile Image async messages.",
+        url: "https://users.pdx.649265684449.aircall-sandbox.com/assets/docs/emc/swagger.yml",
+        description: "Endpoints for Emergency Call.",
       },
     ],
   },
@@ -29,15 +29,15 @@ export const apis = [
     child: [
       {
         title: "Events",
-        key: "async-messages",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
+        key: "events",
+        url: "https://users.pdx.649265684449.aircall-sandbox.com/assets/docs/pri/asyncapi.yml",
         description: "Subscribe to Profile Image async messages.",
       },
       {
         title: "Endpoints",
         key: "endpoints",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Profile Image async messages.",
+        url: "https://users.pdx.649265684449.aircall-sandbox.com/assets/docs/pri/swagger.yml",
+        description: "Endpoints for Profile Image.",
       },
     ],
   },
@@ -47,16 +47,10 @@ export const apis = [
     icon: <FaUsers />,
     child: [
       {
-        title: "Events",
-        key: "async-messages",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Profile Image async messages.",
-      },
-      {
         title: "Endpoints",
         key: "endpoints",
-        url: "https://petstore3.swagger.io/api/v3/openapi.json",
-        description: "Subscribe to Profile Image async messages.",
+        url: "https://users.pdx.649265684449.aircall-sandbox.com/assets/docs/usb/swagger.yml",
+        description: "Endpoints for Users Bulk.",
       },
     ],
   },
